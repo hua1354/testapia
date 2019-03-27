@@ -105,16 +105,16 @@ class MyMail:
         self.smtp.quit()
 
 
-# mymail = MyMail(GetTestConfig('mail.conf'))
-# mymail.connect()
-# mymail.login()
-# mail_content = 'Hi，附件为接口测试报告，烦请查阅'
-# mail_tiltle = '【测试报告】接口测试报告'
-#
-# attachments = set(
-#     ['D:\\讲师资料\\炼数成金\\testapi\\testreport\\2018-08-11-21-44-25-TestReport.xls'])
-#
-#
-# mymail.send_mail(mail_tiltle, mail_content, attachments)
-# mymail.quit()
+mymail = MyMail(GetTestConfig('mail.conf'))
+mymail.connect()
+mymail.login()
+mail_content = 'Hi，附件为接口测试报告，烦请查阅'
+mail_tiltle = '【测试报告】接口测试报告'
+
+attachments = set(
+    ['D:\\讲师资料\\炼数成金\\testapi\\testreport\\2018-08-11-21-44-25-TestReport.xls'])
+
+
+mymail.send_mail(mail_tiltle, mail_content, attachments)
+mymail.quit()
 

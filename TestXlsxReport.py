@@ -11,6 +11,7 @@ from initdata import  init_data
 from sendmail import MyMail
 from log import logger
 from testdata.getpath import GetTestConfig
+
 # post_vote()
 # get_polls()
 # get_login()
